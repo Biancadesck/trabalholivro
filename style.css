@@ -1,0 +1,148 @@
+
+body {
+    margin: 0;
+    background-color: #ffe9ef;
+    color: #222222;
+    font-family: Arial, sans-serif;
+}
+
+.intro {
+    background-color: #f65b9d;
+    text-align: center;
+    padding: 25px;
+}
+
+.intro h1 {
+    margin: 5px;
+    font-size: 32px;
+    color: #222222;
+}
+
+.intro h1 span {
+    color: white;
+}
+
+.intro p {
+    margin-top: 10px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.card {
+    background-color: #fffafa;
+    border: 1px solid #f2bfd1;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    width: 50%;
+}
+
+.card h2 {
+    color: #222222;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+button {
+    background-color: #f65b9d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 18px;
+    margin: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e84d8d;
+}
+
+button:disabled {
+    background-color: #e8b5ca;
+    cursor: not-allowed;
+}
+
+.opcao {
+    display: block;
+    width: 100%;
+    background-color: #fffafa;
+    color: #222222;
+    border: 1px solid #f2bfd1;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.opcao.selecionada {
+    background-color: #ffe0eb;
+    border: 2px solid #f65b9d;
+}
+
+.progresso {
+    background-color: #ffe0eb;
+    height: 8px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.progresso div {
+    background-color: #f65b9d;
+    height: 8px;
+    border-radius: 10px;
+}
+
+.explicacao {
+    background-color: #fff0f5;
+    border: 1px solid #f2bfd1;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    text-align: left;
+}
+
+.livro-vazio {
+    background-color: #fffafa;
+    border: 1px dashed #f2bfd1;
+    border-radius: 12px;
+    padding: 25px 10px;
+    margin: 20px 0;
+}
+
+.livro-vazio span {
+    font-size: 40px;
+}
+
+.capa {
+    width: 210px;
+    max-width: 100%;
+    height: 280px;
+    object-fit: contain;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #f65b9d;
+    color: #222222;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: auto;
+    }
+}
